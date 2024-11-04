@@ -8,7 +8,7 @@ a(k)=-1;
 b(k)=3;
 l=lambda;
 syms x;
-df=diff(f);
+df=diff(f,x);
 
 while(n<log2((b(k)-a(k)))/l)
     n=n+1;
