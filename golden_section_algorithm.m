@@ -6,10 +6,11 @@ a=[];
 a(k)=-1;
 b=[];
 b(k)=3;
-l=lambda;
+l = lambda;
 x1=a(k)+(1-gamma)*(b(k)-a(k));
 x2=a(k)+gamma*(b(k)-a(k));
 while(b(k)-a(k)>l)
+    k=k+1;
     if (subs(f,x1)>subs(f,x2))
         a(k)=x1;
         b(k)=b(k-1);

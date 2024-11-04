@@ -10,7 +10,7 @@ f_3 = exp(x)*(x^3-1)+(x-1)*sin(x);
 
 size = 50;
 
-%% Fixed Lambda.
+% Fixed Lambda.
 % Plot the the number of calculations for each function, for the different
 % lambdas
 k = zeros(size,1); e = zeros(size,1); lambda = 0.01;
@@ -48,7 +48,7 @@ title('$f_{3}$ = ${(x+2)}^{2}$ + $e^{x-2}$ $\cdot$ $sin{(x+3)}$','Interpreter', 
 xlabel('\epsilon') 
 ylabel('numbers of iterations') 
 
-%% Fixed epsilon
+% Fixed epsilon
 
 k = zeros(size,1); l = zeros(size,1); epsilon = 0.001; 
 figure('Name','Plots for fixed epsilon','NumberTitle','off')
