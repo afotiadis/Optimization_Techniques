@@ -10,7 +10,7 @@ l=lambda;
 syms x;
 df=diff(f,x);
 
-while(n<log2((b(k)-a(k)))/l)
+while(n<log2((b(k)-a(k))/l))
     n=n+1;
 end
 
