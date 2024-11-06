@@ -23,7 +23,7 @@ for lambda=linspace(0.005,0.15,size)
 end
 figure(figno)
 subplot(3,1,1)
-plot(l,k,'-r')
+plot(l,k-1,'-r')
 title("Change of calculation for different l using f_1 ")
 xlabel("l")
 ylabel("iterations")
@@ -34,7 +34,7 @@ for lambda=linspace(0.005,0.15,size)
     [a,b,k(i),l(i)]=fib_algorithm(f_2,lambda);
 end
 subplot(3,1,2)
-plot(l,k,'-r')
+plot(l,k-1,'-r')
 title("Change of calculation for different l using f_2 ")
 xlabel("l")
 ylabel("iterations")
@@ -45,7 +45,7 @@ for lambda=linspace(0.005,0.15,size)
     [a,b,k(i),l(i)]=fib_algorithm(f_3,lambda);
 end
 subplot(3,1,3)
-plot(l,k,'-r')
+plot(l,k-1,'-r')
 title("Change of calculation for different l using f_3 ")
 xlabel("l")
 ylabel("iterations")

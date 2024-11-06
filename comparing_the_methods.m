@@ -47,7 +47,7 @@ plot(l_b,2*(k_b-1),'r');
 hold on;
 plot(l_gs,k_gs,'b');
 hold on;
-plot(l_f,k_f,'c');
+plot(l_f,(k_f-1),'c');
 hold on;
 plot(l_bw,k_bw,'g');
 hold off;
