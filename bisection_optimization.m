@@ -24,7 +24,7 @@ for epsilon = linspace(0.001,0.0049,size) %epsilon> lambda/2
 end
 subplot(3,1,1)
 plot(e,2*(k-1),'-r','LineWidth',1.4)
-title('$f_1$ = $(x-3)^{2}$ + $sin^{2}(x+3)$','Interpreter', 'latex')
+title('$f_1(x) = (x-2)^2 + x \cdot \ln(x+3)$','Interpreter', 'latex')
 xlabel('\epsilon') 
 ylabel('numbers of iterations') 
 
@@ -35,7 +35,7 @@ for epsilon = linspace(0.0001,0.0049,size) %epsilon> lambda/2
 end
 subplot(3,1,2)
 plot(e,2*(k-1),'-r','LineWidth',1.4)
-title('$f_2$ = (x-1) $\cdot$ $cos(\frac{x}{2})$  + $x^{2}$','Interpreter', 'latex')
+title('$f_2(x) = e^{-2x} + (x-2)^2$','Interpreter', 'latex')
 xlabel('\epsilon') 
 ylabel('numbers of iterations') 
 
@@ -46,7 +46,7 @@ for epsilon = linspace(0.0001,0.0049,size) %epsilon> lambda/2
 end
 subplot(3,1,3)
 plot(e,2*(k-1),'-r','LineWidth',1.4)
-title('$f_{3}$ = ${(x+2)}^{2}$ + $e^{x-2}$ $\cdot$ $sin{(x+3)}$','Interpreter', 'latex')
+title('$f_3(x) = e^{x^3 - 1} + (x-1) \cdot \sin(x)$','Interpreter', 'latex')
 xlabel('\epsilon') 
 ylabel('numbers of iterations') 
 
@@ -63,7 +63,7 @@ for lambda = linspace(0.0021,0.1,size) %lambda>2epsilon
 end
 subplot(3,1,1)
 plot(l,2*(k-1),'-r','LineWidth',1.4)
-title('$f_1$ = $(x-3)^{2}$ + $sin^{2}(x+3)$','Interpreter', 'latex')
+title('$f_1(x) = (x-2)^2 + x \cdot \ln(x+3)$','Interpreter', 'latex')
 xlabel('l') 
 ylabel('numbers of iterations') 
 
@@ -74,7 +74,7 @@ for lambda = linspace(0.0021,0.1,size) %lambda>2epsilon
 end
 subplot(3,1,2)
 plot(l,2*(k-1),'-r','LineWidth',1.4)
-title('$f_2$ = (x-1) $\cdot$ $cos(\frac{x}{2})$  + $x^{2}$','Interpreter', 'latex')
+title('$f_2(x) = e^{-2x} + (x-2)^2$','Interpreter', 'latex')
 xlabel('l') 
 ylabel('numbers of iterations') 
 
@@ -85,6 +85,6 @@ for lambda = linspace(0.0021,0.1,size) %lambda>2epsilon
 end
 subplot(3,1,3)
 plot(l,2*(k-1),'-r','LineWidth',1.4)
-title('$f_{3}$ = ${(x+2)}^{2}$ + $e^{x-2}$ $\cdot$ $sin{(x+3)}$','Interpreter', 'latex')
+title('$f_3(x) = e^{x^3 - 1} + (x-1) \cdot \sin(x)$','Interpreter', 'latex')
 xlabel('l') 
 ylabel('numbers of iterations') 

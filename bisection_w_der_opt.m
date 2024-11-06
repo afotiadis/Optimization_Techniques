@@ -54,9 +54,11 @@ ylabel("iterations")
 %=======================================================================
 %Giving l some standard values
 l_val=[0.01,0.05,0.1];
-funcNames = {'$f_1$ = $(x-3)^{2}$ + $sin^{2}(x+3)$',... 
-    '$f_2$ = (x-1) $\cdot$ $cos(\frac{x}{2})$  + $x^{2}$',...
-    '$f_{3}$ = ${(x+2)}^{2}$ + $e^{x-2}$ $\cdot$ $sin{(x+3)}$'};
+funcNames = {
+    '$f_1(x) = (x-2)^2 + x \cdot \ln(x+3)$', ...
+    '$f_2(x) = e^{-2x} + (x-2)^2$', ...
+    '$f_3(x) = e^{x^3 - 1} + (x-1) \cdot \sin(x)$'
+};
 F={f_1,f_2,f_3}; %struct that contains all the functions 
 
 %In this loop we study how the edges of the search area change during the
