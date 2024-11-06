@@ -45,11 +45,11 @@ end
 %Plotting all the results in one figure
 plot(l_b,2*(k_b-1),'r');
 hold on;
-plot(l_gs,2*(k_gs-1),'b');
+plot(l_gs,k_gs,'b');
 hold on;
-plot(l_f,2*(k_f-1),'c');
+plot(l_f,k_f,'c');
 hold on;
-plot(l_bw,2*(k_bw-1),'g');
+plot(l_bw,k_bw,'g');
 hold off;
 
 
