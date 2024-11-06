@@ -1,5 +1,5 @@
 function [num] = fib_sequence(n)
-
+%Assisting function that calculates the fibonnaci sequence  numbers
 num=1;
 preNum=0;
 if (n==0)

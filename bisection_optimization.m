@@ -13,10 +13,12 @@ size = 50;
 % Fixed Lambda.
 % Plot the the number of calculations for each function, for the different
 % lambdas
-k = zeros(size,1); e = zeros(size,1); lambda = 0.01;
+k = zeros(size,1); 
+e = zeros(size,1); 
+lambda = 0.01;
 figure('Name','Plots for fixed lambda','NumberTitle','off')
 i = 0;
-for epsilon = linspace(0.001,0.0049,size) %epsilon> lambda/2
+for epsilon = linspace(0.001,0.0049,size) %epsilon> lambda/2 
     i = i + 1;
     [a,b,k(i),e(i),~] = bisectionalgorithm(f_1, epsilon, lambda);
 end
@@ -47,6 +49,8 @@ plot(e,2*(k-1),'-r','LineWidth',1.4)
 title('$f_{3}$ = ${(x+2)}^{2}$ + $e^{x-2}$ $\cdot$ $sin{(x+3)}$','Interpreter', 'latex')
 xlabel('\epsilon') 
 ylabel('numbers of iterations') 
+
+%=========================================================================
 
 % Fixed epsilon
 
