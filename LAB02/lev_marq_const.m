@@ -14,7 +14,7 @@ while(norm(double(subs(grad_f,symvar(grad_f),{xk(:,k)'})))>epsilon)
     if(sum(eigen_values<0)>0)
         uk=max(abs(eigen_values))+0.2;
     end
-    A=hess_matrix+uk*eye(2);
+    A=hess_mtx+uk*eye(2);
     B=-double(subs(grad_f,symvar(grad_f),{xk(:,k)'}));
 
     d=[d linsolve(A,B)];

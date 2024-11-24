@@ -6,13 +6,9 @@ function [value] = gold_sect_modified(f,lambda,alpha,beta)
 %value: the middle point of the last interval
 %
 
-n = 1;
-g = (sqrt(5) -1)/2 ; 
-a = []; 
-b = [];
+n = 1; g = (sqrt(5) -1)/2 ; a = []; b = [];
 l = lambda; 
-a(n) = alpha; 
-b(n) = beta;
+a(n) = alpha; b(n) = beta;
 x_1 = a(n) + (1 - g)*(b(n) - a(n));
 x_2 = a(n) + g*(b(n) - a(n));
 while b(n)-a(n)>l

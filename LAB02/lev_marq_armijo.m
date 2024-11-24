@@ -19,13 +19,13 @@ s=gamma*b^mk;
         if(sum(eigen_values<0)>0)
             uk=max(abs(eigen_values))+0.2;
         end
-        A=hess_matrix+uk*eye(2);
+        A=hess_mtx+uk*eye(2);
         B=-double(subs(grad_f,symvar(grad_f),{xk(:,k)'}));
     
         d=[d linsolve(A,B)];
     
         f_xk=double(f(xk(1,k),xk(2,k)));
-        while (f_xk-double(f(xk(1,k)+gamma*d(1,k),xk(2,k)+gamma*d(2,k)))<-1*b^mk*s*d(:,k)'*(-B))
+        while (f_xk-double(f(xk(1,k)+gamma*d(1,k),xk(2,k)+gamma*d(2,k)))<-a*b^mk*s*d(:,k)'*(-B))
             mk=mk+1;
             gamma=s*b^mk;
         end
