@@ -3,8 +3,8 @@ function [value] = gold_sect_modified(f,lambda,alpha,beta)
 %f: is the function whose the local minimum i want to find
 %lamda: the tolerance of the final interval [a,b]
 %
-%value: the middle point of the last interval
-%
+%value: the average (middle point) of the last interval
+%since 0<gamma<1 average and middle point have the same meaning here.
 
 n = 1; g = (sqrt(5) -1)/2 ; a = []; b = [];
 l = lambda; 
